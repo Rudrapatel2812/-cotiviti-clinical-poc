@@ -1,0 +1,95 @@
+{
+  "patient_id": "P001",
+  "title": "Cardiac Emergency",
+  "original_note": "58 year old male presents with chest pain radiating to the left arm, onset 2 hours ago. Patient has a history of hypertension and Type 2 diabetes. Smoker for 20 years, approximately 1 pack per day. Vital signs: BP 155/95 mmHg, HR 102 bpm, RR 18, O2 sat 96% on room air. Troponin elevated at 0.8 ng/mL. EKG shows ST changes in leads II, III, aVF. Current medications: metformin 1000mg BID, lisinopril 10mg daily. No known drug allergies. Patient is diaphoretic and appears in moderate distress.",
+  "extraction": {
+    "patient_info": {
+      "age": 58,
+      "gender": "male",
+      "chief_complaint": "chest pain radiating to the left arm"
+    },
+    "diagnoses": [
+      "hypertension",
+      "Type 2 diabetes"
+    ],
+    "medications": [
+      "metformin 1000mg BID",
+      "lisinopril 10mg daily"
+    ],
+    "vitals": {
+      "BP": "155/95 mmHg",
+      "HR": "102 bpm",
+      "RR": 18,
+      "O2 sat": "96% on room air"
+    },
+    "lab_results": {
+      "Troponin": "0.8 ng/mL"
+    },
+    "symptoms": [
+      "chest pain",
+      "pain radiating to the left arm",
+      "diaphoresis",
+      "moderate distress"
+    ]
+  },
+  "pattern_risk": {
+    "clinical_patterns": [
+      "Acute Coronary Syndrome",
+      "Hypertensive Crisis",
+      "Tachycardia"
+    ],
+    "risk_level": "CRITICAL",
+    "risk_reasons": [
+      "Elevated Troponin indicating cardiac stress or injury",
+      "Chest pain radiating to the left arm with diaphoresis suggestive of myocardial infarction",
+      "History of hypertension with elevated BP and tachycardia"
+    ],
+    "documentation_gaps": [
+      "EKG results",
+      "Complete blood count (CBC)",
+      "Basic metabolic panel (BMP)",
+      "Chest X-ray",
+      "History of any past cardiac events"
+    ],
+    "recommended_urgency": "immediate"
+  },
+  "synthesis": {
+    "clinical_summary": "A 58-year-old male presents with chest pain radiating to the left arm, diaphoresis, and moderate distress. He has a history of hypertension and Type 2 diabetes. His elevated troponin level suggests potential myocardial infarction, and his vital signs indicate uncontrolled blood pressure and tachycardia.",
+    "icd10_codes": [
+      {
+        "code": "I20.0",
+        "description": "Unstable angina"
+      },
+      {
+        "code": "I10",
+        "description": "Essential (primary) hypertension"
+      },
+      {
+        "code": "E11.9",
+        "description": "Type 2 diabetes mellitus without complications"
+      }
+    ],
+    "cpt_codes": [
+      {
+        "code": "99285",
+        "description": "Emergency department visit for the evaluation and management of a patient, high severity"
+      },
+      {
+        "code": "93010",
+        "description": "Electrocardiogram, routine ECG with at least 12 leads; interpretation and report only"
+      },
+      {
+        "code": "84484",
+        "description": "Troponin, quantitative"
+      }
+    ],
+    "recommended_actions": [
+      "Administer aspirin and nitroglycerin as per protocol",
+      "Perform an immediate EKG to assess cardiac status",
+      "Initiate continuous cardiac monitoring",
+      "Prepare for possible transfer to the catheterization lab"
+    ],
+    "explainability": "This case was classified as critical due to the presentation of chest pain radiating to the left arm and diaphoresis, which are indicative of a myocardial event. The elevated troponin level further supports cardiac injury. Additionally, the patient's high blood pressure and tachycardia are poorly controlled, increasing the severity of the presentation.",
+    "payment_flags": []
+  }
+}

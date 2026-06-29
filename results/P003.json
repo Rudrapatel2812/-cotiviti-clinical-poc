@@ -1,0 +1,72 @@
+{
+  "patient_id": "P003",
+  "title": "Incomplete Documentation Case",
+  "original_note": "Patient presents with fever and cough. No vitals recorded. No lab results available. No medical history documented. No current medications listed. Duration and severity of symptoms not noted.",
+  "extraction": {
+    "patient_info": {
+      "age": null,
+      "gender": null,
+      "chief_complaint": "fever and cough"
+    },
+    "diagnoses": null,
+    "medications": null,
+    "vitals": null,
+    "lab_results": null,
+    "symptoms": [
+      "fever",
+      "cough"
+    ]
+  },
+  "pattern_risk": {
+    "clinical_patterns": [
+      "upper respiratory infection",
+      "influenza",
+      "COVID-19"
+    ],
+    "risk_level": "MEDIUM",
+    "risk_reasons": [
+      "presence of fever and cough which could indicate a respiratory infection",
+      "lack of vital signs and laboratory results to assess severity"
+    ],
+    "documentation_gaps": [
+      "age",
+      "gender",
+      "vital signs",
+      "laboratory results",
+      "current medications",
+      "past medical history"
+    ],
+    "recommended_urgency": "urgent"
+  },
+  "synthesis": {
+    "clinical_summary": "The patient presents with a fever and cough, symptoms that suggest an upper respiratory infection such as influenza or COVID-19. Given the medium risk assessment, further investigation through vital signs and laboratory tests is urgently recommended.",
+    "icd10_codes": [
+      {
+        "code": "R50.9",
+        "description": "Fever, unspecified"
+      },
+      {
+        "code": "R05",
+        "description": "Cough"
+      }
+    ],
+    "cpt_codes": [
+      {
+        "code": "99203",
+        "description": "Office or other outpatient visit for the evaluation and management of a new patient"
+      },
+      {
+        "code": "87635",
+        "description": "COVID-19 testing"
+      }
+    ],
+    "recommended_actions": [
+      "Obtain complete set of vital signs",
+      "Conduct COVID-19 test",
+      "Perform laboratory tests to rule out influenza and other potential infections",
+      "Gather additional patient history including age, gender, and past medical history"
+    ],
+    "explainability": "The case was classified at a medium risk level due to the presence of fever and cough indicating a possible respiratory infection, which can be serious. The absence of vital signs and laboratory results prevents accurate assessment of the severity, thus necessitating urgent follow-up.",
+    "payment_flags": []
+  }
+}

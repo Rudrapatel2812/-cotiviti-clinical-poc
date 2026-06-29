@@ -1,0 +1,105 @@
+{
+  "patient_id": "P002",
+  "title": "Obstetric Emergency",
+  "original_note": "34 year old pregnant female at 28 weeks gestation presents with severe headache and visual changes described as blurry vision with floaters, onset 6 hours ago. This is her first pregnancy. Vital signs: BP 168/110 mmHg, HR 88 bpm, RR 16, O2 sat 99% on room air. Urine dipstick shows protein 3+. Lab results: platelets 95,000 per microliter (low), LFTs mildly elevated. No current medications. No prior obstetric complications. Patient denies fever, chest pain, or abdominal pain. Fetal heart tones present and regular.",
+  "extraction": {
+    "patient_info": {
+      "age": 34,
+      "gender": "female",
+      "chief_complaint": "severe headache and visual changes"
+    },
+    "diagnoses": [
+      "possible preeclampsia"
+    ],
+    "medications": [],
+    "vitals": {
+      "BP": "168/110 mmHg",
+      "HR": "88 bpm",
+      "RR": "16",
+      "O2 sat": "99% on room air"
+    },
+    "lab_results": {
+      "urine_protein": "3+",
+      "platelets": "95,000 per microliter (low)",
+      "LFTs": "mildly elevated"
+    },
+    "symptoms": [
+      "severe headache",
+      "blurry vision",
+      "floaters"
+    ]
+  },
+  "pattern_risk": {
+    "clinical_patterns": [
+      "severe hypertension",
+      "proteinuria",
+      "thrombocytopenia",
+      "visual disturbances",
+      "potential HELLP syndrome"
+    ],
+    "risk_level": "CRITICAL",
+    "risk_reasons": [
+      "Severe hypertension (168/110 mmHg)",
+      "Significant proteinuria (3+)",
+      "Thrombocytopenia (95,000 per microliter)",
+      "Visual disturbances with severe headache",
+      "Elevated liver function tests"
+    ],
+    "documentation_gaps": [
+      "Pregnancy status or gestational age",
+      "Obstetrical history",
+      "Additional lab tests such as kidney function",
+      "Current or recent medication use",
+      "History of any previous episodes"
+    ],
+    "recommended_urgency": "immediate"
+  },
+  "synthesis": {
+    "clinical_summary": "A 34-year-old female presents with severe headache, visual changes, and elevated blood pressure, raising suspicion for preeclampsia and potential HELLP syndrome given the lab findings of significant proteinuria, low platelet count, and elevated liver function tests. Immediate evaluation and management are recommended due to critical risk factors.",
+    "icd10_codes": [
+      {
+        "code": "O14.90",
+        "description": "Unspecified preeclampsia, unspecified trimester"
+      },
+      {
+        "code": "R51",
+        "description": "Headache"
+      },
+      {
+        "code": "R44.1",
+        "description": "Visual hallucinations (floaters)"
+      },
+      {
+        "code": "D69.6",
+        "description": "Thrombocytopenia, unspecified"
+      }
+    ],
+    "cpt_codes": [
+      {
+        "code": "84450",
+        "description": "Transferase; aspartate amino (AST) (SGOT)"
+      },
+      {
+        "code": "84460",
+        "description": "Transferase; alanine amino (ALT) (SGPT)"
+      },
+      {
+        "code": "85025",
+        "description": "Complete blood count (CBC) with platelet count"
+      },
+      {
+        "code": "81001",
+        "description": "Urinalysis, by dipstick or tablet reagent; automated, with microscopy"
+      }
+    ],
+    "recommended_actions": [
+      "Initiate immediate maternal-fetal evaluation",
+      "Consult obstetrics for assessment of preeclampsia and HELLP syndrome",
+      "Start continuous monitoring of blood pressure and fetal status",
+      "Administer antihypertensive therapy as indicated",
+      "Consider transfer to a higher level of care for specialized management"
+    ],
+    "explainability": "This case is classified as critical due to severe hypertension (168/110 mmHg), significant proteinuria (3+), and thrombocytopenia (95,000 per microliter). The presence of severe headache and visual disturbances suggest advancing preeclampsia possibly progressing to HELLP syndrome, indicated by elevated liver function tests, which require immediate intervention to prevent maternal and fetal complications.",
+    "payment_flags": []
+  }
+}

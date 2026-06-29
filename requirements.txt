@@ -1,4 +1,3 @@
 openai
 streamlit
 python-dotenv
-pytest
